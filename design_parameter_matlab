@@ -1,0 +1,13 @@
+% Defina los valores de resistencia de entrada y condensadores
+Rin = 10000; % ohms
+Cin = 100e-9; % farads
+
+% Defina los valores de resistencia de retroalimentación y condensadores
+Rf = 10000; % ohms
+Cf = 100e-9; % farads
+
+% Calcule la ganancia del circuito
+Gain = 1 + (Rf/Rin) * (Cin/Cf);
+
+% Muestre la ganancia del circuito
+disp(['La ganancia del circuito es ', num2str(Gain)]);
